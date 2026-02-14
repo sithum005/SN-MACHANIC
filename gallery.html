@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SN Machinics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#6366f1',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        accent: '#f43f5e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        .gallery-overlay {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+    <!-- Navbar (Same as index) -->
+    <nav
+        class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                        SN Machinics
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="gallery.html"
+                            class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors border-b-2 border-primary">Gallery</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-b from-slate-900 to-slate-950 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Our Work Gallery</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+            A showcase of precision repairs and restored machines.
+        </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
+
+            <!-- Gallery Item 1 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1605218427368-35b8dd53443a?q=80&w=2070&auto=format&fit=crop"
+                    alt="Repair Work"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Detailed Inspection</h3>
+                        <p class="text-gray-300 text-sm">Comprehensive checkup</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up"
+                data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1596207891316-231548d49405?q=80&w=1974&auto=format&fit=crop"
+                    alt="Motor Repair"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Motor Servicing</h3>
+                        <p class="text-gray-300 text-sm">Industrial motor repair</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up"
+                data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop"
+                    alt="Thread Tension"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Tension Adjustment</h3>
+                        <p class="text-gray-300 text-sm">Perfect stitch balance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1520697843468-b3d567123aa1?q=80&w=2070&auto=format&fit=crop"
+                    alt="Overlock Blade"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Blade Sharpening</h3>
+                        <p class="text-gray-300 text-sm">Overlock maintenance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up"
+                data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?q=80&w=1974&auto=format&fit=crop"
+                    alt="Zoje Machine"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Restored Zoje</h3>
+                        <p class="text-gray-300 text-sm">Full restoration</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer" data-aos="fade-up"
+                data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1512106374988-c97f427f63b6?q=80&w=2070&auto=format&fit=crop"
+                    alt="Workshop"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 gallery-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <h3 class="text-white font-bold text-lg">Our Workshop</h3>
+                        <p class="text-gray-300 text-sm">Where the magic happens</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-black py-12 border-t border-gray-900 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">SN Machinics</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                    <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-900 text-center text-gray-600 text-sm">
+                &copy; 2024 SN Machinics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+    </script>
+</body>
+
+</html>

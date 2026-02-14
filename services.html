@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SN Machinics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#6366f1',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        accent: '#f43f5e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+    <!-- Navbar (Same as index) -->
+    <nav
+        class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                        SN Machinics
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors border-b-2 border-primary">Services</a>
+                        <a href="gallery.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-b from-slate-900 to-slate-950 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Our Specialized Services</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+            Expert repair and maintenance for a wide range of industrial and domestic sewing machines.
+        </p>
+    </div>
+
+    <!-- Machine Repair Details -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- 1. Singer Single Needle -->
+        <div class="flex flex-col md:flex-row items-center gap-12 group">
+            <div class="w-full md:w-1/2 relative" data-aos="fade-right">
+                <div
+                    class="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity">
+                </div>
+                <img src="https://images.unsplash.com/photo-1616164282366-3d3cb017c490?q=80&w=1974&auto=format&fit=crop"
+                    alt="Singer Single Needle"
+                    class="relative rounded-2xl shadow-2xl border border-white/10 w-full object-cover h-80 md:h-96 transform group-hover:scale-[1.02] transition-transform duration-500">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-left">
+                <div class="flex items-center mb-4">
+                    <span
+                        class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold mr-3">Standard</span>
+                    <h2 class="text-3xl font-bold text-white">Singer Single Needle</h2>
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    The classic workhorse for standard sewing. We provide complete diagnostics, timing adjustments,
+                    tension calibration, and motor servicing for all Singer single needle models.
+                </p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Needle bar alignment
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Feed dog height adjustment
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Belt tensioning & replacement
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2. Zoje Industrial Machine -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 group">
+            <div class="w-full md:w-1/2 relative" data-aos="fade-left">
+                <div
+                    class="absolute inset-0 bg-secondary/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity">
+                </div>
+                <img src="https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=2070&auto=format&fit=crop"
+                    alt="Zoje Industrial"
+                    class="relative rounded-2xl shadow-2xl border border-white/10 w-full object-cover h-80 md:h-96 transform group-hover:scale-[1.02] transition-transform duration-500">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <div class="flex items-center mb-4">
+                    <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold mr-3">Heavy
+                        Duty</span>
+                    <h2 class="text-3xl font-bold text-white">Zoje Industrial Machine</h2>
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Built for speed and durability, Zoje industrial machines require precise tuning. Our technicians are
+                    factory-trained to handle the complex mechanics of these high-performance units.
+                </p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Oil pump system flushing
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        High-speed timing balance
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Electronic control box repairs
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. Baby Overlock -->
+        <div class="flex flex-col md:flex-row items-center gap-12 group">
+            <div class="w-full md:w-1/2 relative" data-aos="fade-right">
+                <div
+                    class="absolute inset-0 bg-accent/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity">
+                </div>
+                <!-- Placeholder for Baby Overlock -->
+                <img src="https://images.unsplash.com/photo-1574637731797-4081d556488d?q=80&w=1929&auto=format&fit=crop"
+                    alt="Baby Overlock"
+                    class="relative rounded-2xl shadow-2xl border border-white/10 w-full object-cover h-80 md:h-96 transform group-hover:scale-[1.02] transition-transform duration-500">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-left">
+                <div class="flex items-center mb-4">
+                    <span
+                        class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-semibold mr-3">Compact</span>
+                    <h2 class="text-3xl font-bold text-white">Baby Overlock</h2>
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Delicate yet essential for finishes. We specialize in loop timing and blade sharpening for baby
+                    overlock machines to ensure clean, professional edges.
+                </p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Upper & lower looper timing
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Blade sharpening & replacement
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Thread tension optimization
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. Zoje 5 Overlock -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 group">
+            <div class="w-full md:w-1/2 relative" data-aos="fade-left">
+                <div
+                    class="absolute inset-0 bg-yellow-500/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity">
+                </div>
+                <!-- Placeholder for Zoje 5 Overlock -->
+                <img src="https://images.unsplash.com/photo-1630327341517-76e927c37617?q=80&w=2070&auto=format&fit=crop"
+                    alt="Zoje 5 Overlock"
+                    class="relative rounded-2xl shadow-2xl border border-white/10 w-full object-cover h-80 md:h-96 transform group-hover:scale-[1.02] transition-transform duration-500">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <div class="flex items-center mb-4">
+                    <span
+                        class="bg-yellow-500/10 text-yellow-500 px-3 py-1 rounded-full text-sm font-semibold mr-3">Industrial</span>
+                    <h2 class="text-3xl font-bold text-white">Zoje 5 Overlock</h2>
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    The 5-thread safety stitch machine is critical for garment construction. We ensure all five threads
+                    interact perfectly for a strong, beautiful seam.
+                </p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Complex 5-thread synchronization
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Differential feed adjustment
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Chain stitch mechanism repair
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-black py-12 border-t border-gray-900 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">SN Machinics</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                    <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-900 text-center text-gray-600 text-sm">
+                &copy; 2024 SN Machinics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+    </script>
+</body>
+
+</html>

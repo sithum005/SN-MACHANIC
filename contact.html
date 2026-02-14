@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SN Machinics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#6366f1',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        accent: '#f43f5e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        .contact-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+    <!-- Navbar (Same as index) -->
+    <nav
+        class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                        SN Machinics
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="gallery.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                        <a href="contact.html"
+                            class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors border-b-2 border-primary">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="pt-32 pb-12 bg-gradient-to-b from-slate-900 to-slate-950 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Get in Touch</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+            Have a question or need a repair? Contact us today.
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <!-- Contact Info -->
+            <div class="space-y-8" data-aos="fade-right">
+                <div class="bg-dark border border-gray-800 p-8 rounded-2xl hover:border-primary/50 transition-colors">
+                    <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Telephone</p>
+                            <p class="text-gray-400">+94 7X XXX XXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="p-3 bg-secondary/10 rounded-lg text-secondary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Email</p>
+                            <p class="text-gray-400">info@snmachinics.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="p-3 bg-accent/10 rounded-lg text-accent">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Address</p>
+                            <p class="text-gray-400">123 Main Street, Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fake Map -->
+                <div class="w-full h-64 bg-gray-800 rounded-2xl overflow-hidden relative border border-gray-700">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop"
+                        alt="Map Location" class="w-full h-full object-cover opacity-50">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="bg-red-500 text-white px-4 py-2 rounded-full shadow-lg font-bold">We are
+                            here</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-dark p-8 rounded-2xl border border-gray-800" data-aos="fade-left">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+                        <input type="text" id="name"
+                            class="w-full bg-slate-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email" id="email"
+                            class="w-full bg-slate-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
+                        <input type="tel" id="phone"
+                            class="w-full bg-slate-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="+94 7X XXX XXXX">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea id="message" rows="4"
+                            class="w-full bg-slate-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="button"
+                        class="w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-4 rounded-lg hover:shadow-lg hover:shadow-primary/25 transform hover:scale-[1.02] transition-all">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-black py-12 border-t border-gray-900 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">SN Machinics</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                    <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-900 text-center text-gray-600 text-sm">
+                &copy; 2024 SN Machinics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+    </script>
+</body>
+
+</html>
